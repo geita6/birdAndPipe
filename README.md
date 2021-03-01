@@ -1,3 +1,3 @@
 # FlappyBird
 
-`![picture](/screeencast/flappybird.gif)`
+![picture](/flappybird.gif)
