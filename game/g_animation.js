@@ -15,7 +15,6 @@ class GAnimation {
 
         this.frameIndex = 0
         this.frameCount = 3
-        // 
         this.flipX = false
         
         this.alpha = 1
@@ -25,7 +24,6 @@ class GAnimation {
     }
 
     update() {
-        // log('anim update', this.frameCount)
         this.frameCount--
         if (this.frameCount == 0) {
             this.frameCount = 3
@@ -42,7 +40,6 @@ class GAnimation {
         let h2 = this.h / 2
         let x = this.x + w2
         let y = this.y + h2
-        // 翻转
         context.translate(x, y)
         if (this.flipX) {
             context.scale(-1, 1)

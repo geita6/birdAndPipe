@@ -10,13 +10,10 @@ class SceneEnd extends GScene {
     }
     setup() {
         let game = this.game
-        // 加入bg
         let bg = GImage.new(game, 'bg')
         this.addElement(bg)
-        // 加入地面
         this.floor = Floor.new(game)
         this.addElement(this.floor)
-        // 加入标题
         let title1 = GImage.new(game, 'title1')
         title1.x = 80
         title1.y = 100
@@ -28,8 +25,6 @@ class SceneEnd extends GScene {
     }
     draw() {
         super.draw()
-        // this.game.context.fillStyle = "white";
-        // this.game.context.fillText(this.label.text, 100, 190)
     }
 
 }

@@ -8,7 +8,6 @@ class Floor extends GScene {
     setup() {
         let game = this.game
         this.keyigvds = true
-        // 循环复制地面
         this.grounds = []
         for (let i = 0; i < 30; i++) {
             let g = GImage.new(game, 'ground')
@@ -25,7 +24,6 @@ class Floor extends GScene {
         if (this.keyigvds == false) {
             return 
         }
-        // 地面移动
         this.skipCount--
         let offset = -5
         if (this.skipCount == 0) {

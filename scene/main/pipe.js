@@ -11,12 +11,10 @@ class Pipes {
         this.keyigvds = true
 
         for (let i = 0; i < this.columsOfPipes; i++) {
-            // 上面的管子
             let p1 = GImage.new(this.game, 'pipe')
             p1.flipY = true
             p1.x = 500 + i * this.管子横向间距
 
-            // 下面的管子
             let p2 = GImage.new(this.game, 'pipe')
             p2.x = p1.x
 
